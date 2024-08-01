@@ -1,4 +1,5 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, View, Button, Text } from 'react-native';
+import { oauth, net, smartstore, mobilesync } from 'react-native-force';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -46,6 +47,16 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
       </ThemedView>
+        <View style={styles.container}>
+            <Button
+                title="Login"
+                onPress={() => {
+                    // @ts-ignore
+                    oauth.authenticate();
+                }}
+            ></Button>
+            <Text>Open up App.js to start working on your app!</Text>
+        </View>
     </ParallaxScrollView>
   );
 }
@@ -67,4 +78,10 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+    container: {
+        flex: 1,
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "center",
+    },
 });
