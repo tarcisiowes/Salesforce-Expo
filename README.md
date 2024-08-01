@@ -5,9 +5,18 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 ## Get started
 
 1. Install dependencies
-
    ```bash
-   npm install 
+      npm install -g expo-cli
+   ```
+   ```bash
+      npm install -g eas-cli
+     ```
+   ```bash
+      npm install -g yarn
+   ```
+   Navigate to directory delete package.lock file and run :
+   ```bash
+      yarn
    ```
 
 2. Start the app
