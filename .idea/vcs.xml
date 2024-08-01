@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mobile_sdk/SalesforceMobileSDK-Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mobile_sdk/SalesforceMobileSDK-iOS" vcs="Git" />
   </component>
 </project>
